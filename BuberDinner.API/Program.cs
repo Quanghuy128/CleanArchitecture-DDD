@@ -1,12 +1,20 @@
+using BuberDinner.API.Errors;
+using BuberDinner.API.Filter;
+using BuberDinner.API.Middleware;
 using BuberDinner.Application;
 using BuberDinner.Infrastucture;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// Add services to the ioc container.
 builder.Services.AddApplication().AddInfrastucture(builder.Configuration);
+
+//builder.Services.AddControllers(options => options.Filters.Add<ErrorHandlingFilterAttribute>());
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+builder.Services.AddSingleton<ProblemDetailsFactory, BuberDinnnerProblemDetailFactory>();
+
+//Swagger
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -18,6 +26,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+//app.UseMiddleware<ErrorHandlingMiddleware>();
+
+app.UseExceptionHandler("/error");
 
 app.UseHttpsRedirection();
 
