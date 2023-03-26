@@ -27,10 +27,10 @@ namespace BuberDinner.API.Controllers
                 );
             AuthenticationResponse? authResponse = new AuthenticationResponse
                 (
-                    authResult.Id,
-                    authResult.FirstName,
-                    authResult.LastName,
-                    authResult.Email,
+                    authResult.User.Id,
+                    authResult.User.FirstName,
+                    authResult.User.LastName,
+                    authResult.User.Email,
                     authResult.Token
                 );
             return Ok(authResponse);
@@ -47,10 +47,10 @@ namespace BuberDinner.API.Controllers
 
             AuthenticationResponse? authResponse = new AuthenticationResponse
                 (
-                    authResult.Id,
-                    authResult.FirstName,
-                    authResult.LastName,
-                    authResult.Email,
+                    authResult.User.Id,
+                    authResult.User.FirstName,
+                    authResult.User.LastName,
+                    authResult.User.Email,
                     authResult.Token
                 );
             return Ok(authResponse);
