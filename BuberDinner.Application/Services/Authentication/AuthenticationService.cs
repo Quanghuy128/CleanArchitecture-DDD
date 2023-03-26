@@ -34,14 +34,11 @@ namespace BuberDinner.Application.Services.Authentication
             _userRepository.Add(user);
 
             //3. Create Jwt token
-            var token = _jwtTokenGenerator.GenerateToken(user.Id, firstName, lastName);
+            var token = _jwtTokenGenerator.GenerateToken(user);
 
             return new AuthenticationResult
             (
-                user.Id, 
-                firstName, 
-                lastName, 
-                email, 
+                user,
                 token
             );
         }
@@ -59,13 +56,10 @@ namespace BuberDinner.Application.Services.Authentication
                 throw new Exception("Invalid Password!");
             }
             //3. Creat JWT
-            var token = _jwtTokenGenerator.GenerateToken(user.Id, user.FirstName, user.LastName);
+            var token = _jwtTokenGenerator.GenerateToken(user);
             return new AuthenticationResult
             (
-                user.Id,
-                user.FirstName,
-                user.LastName,
-                email,
+                user,
                 token
             );
         }

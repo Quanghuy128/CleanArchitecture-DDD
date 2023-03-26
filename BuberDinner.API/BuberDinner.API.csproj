@@ -18,8 +18,4 @@
     <ProjectReference Include="..\BuberDinner.Infrastucture\BuberDinner.Infrastucture.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Middleware\" />
-  </ItemGroup>
-
 </Project>
