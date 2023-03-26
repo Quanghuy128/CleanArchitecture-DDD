@@ -1,5 +1,6 @@
 ﻿using BuberDinner.Application.Common.Authentication;
 using BuberDinner.Application.Common.Persistence;
+using BuberDinner.Domain.Entities;
 
 namespace BuberDinner.Application.Services.Authentication
 {
@@ -16,17 +17,28 @@ namespace BuberDinner.Application.Services.Authentication
 
         public AuthenticationResult Register(string firstName, string lastName, string email, string password)
         {
-            //check if user already existed
+            //1. Validate user doesn't exist
+            if(_userRepository.GetUserByEmail(email) is not null)
+            {
+                throw new Exception("User with provided email already exists.");
+            }
 
-            //create user (generate unique ID)
+            //2. Create user (generate unique ID) & persist to Db
+            var user = new User{
+                FirstName= firstName,
+                LastName= lastName,
+                Email= email,
+                Password= password
+            };
 
-            //create Jwt token
-            Guid userId = Guid.NewGuid();
-            var token = _jwtTokenGenerator.GenerateToken(userId, firstName, lastName);
+            _userRepository.Add(user);
+
+            //3. Create Jwt token
+            var token = _jwtTokenGenerator.GenerateToken(user.Id, firstName, lastName);
 
             return new AuthenticationResult
             (
-                userId, 
+                user.Id, 
                 firstName, 
                 lastName, 
                 email, 
@@ -36,13 +48,25 @@ namespace BuberDinner.Application.Services.Authentication
 
         public AuthenticationResult Login(string email, string password)
         {
+            //1. Validate user exists
+            if(_userRepository.GetUserByEmail(email) is not User user)
+            {
+                throw new Exception("User with provided email does not exist!");
+            }
+            //2. Validate password is correct
+            if(user.Password != password)
+            {
+                throw new Exception("Invalid Password!");
+            }
+            //3. Creat JWT
+            var token = _jwtTokenGenerator.GenerateToken(user.Id, user.FirstName, user.LastName);
             return new AuthenticationResult
             (
-                Guid.NewGuid(),
-                "firstName",
-                "lastName",
+                user.Id,
+                user.FirstName,
+                user.LastName,
                 email,
-                "token"
+                token
             );
         }
     }
