@@ -11,7 +11,7 @@ namespace BuberDinner.API.Filter
         {
             var exception = context.Exception;
 
-            var problemDetail = new ProblemDetails()
+            var problemDetail = new ProblemDetails
             {
                 Type = "https://www.rfc-editor.org/rfc/rfc7231",
                 Title = "<FilterLayer> - An error occurred while processing your request!!!",

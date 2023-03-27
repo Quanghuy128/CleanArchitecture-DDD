@@ -3,6 +3,7 @@ using BuberDinner.API.Filter;
 using BuberDinner.API.Middleware;
 using BuberDinner.Application;
 using BuberDinner.Infrastucture;
+using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -31,9 +32,13 @@ if (app.Environment.IsDevelopment())
 
 app.UseExceptionHandler("/error");
 
-app.UseHttpsRedirection();
+//app.Map("/error", (HttpContext httpContext) =>
+//{
+//    Exception? exception = httpContext.Features.Get<IExceptionHandlerFeature>()?.Error;
+//    return Results.Problem();
+//});
 
-app.UseAuthorization();
+app.UseHttpsRedirection();
 
 app.MapControllers();
 
