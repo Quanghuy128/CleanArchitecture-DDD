@@ -1,4 +1,4 @@
-﻿using BuberDinner.Application.Common.Persistence;
+﻿using BuberDinner.Application.Common.Interfaces.Persistence;
 using BuberDinner.Domain.Entities;
 
 namespace BuberDinner.Infrastucture.Persistence
