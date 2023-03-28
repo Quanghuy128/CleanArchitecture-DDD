@@ -4,6 +4,7 @@ using Microsoft.Extensions.Options;
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 using ErrorOr;
+using BuberDinner.API.Http;
 
 namespace BuberDinner.API.Common.Errors
 {
@@ -97,7 +98,7 @@ namespace BuberDinner.API.Common.Errors
 
             _configure?.Invoke(new() { HttpContext = httpContext!, ProblemDetails = problemDetails });
 
-            var errors = httpContext?.Items["errors"] as List<Error>;
+            var errors = httpContext?.Items[HttpContextItemKey.Errors] as List<Error>;
 
             if(errors is not null)
             {
