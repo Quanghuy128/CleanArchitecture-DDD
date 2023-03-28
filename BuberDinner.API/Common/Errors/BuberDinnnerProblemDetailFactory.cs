@@ -4,9 +4,9 @@ using Microsoft.Extensions.Options;
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 
-namespace BuberDinner.API.Errors
+namespace BuberDinner.API.Common.Errors
 {
-    public class BuberDinnnerProblemDetailFactory: ProblemDetailsFactory
+    public class BuberDinnnerProblemDetailFactory : ProblemDetailsFactory
     {
         private readonly ApiBehaviorOptions _options;
         private readonly Action<ProblemDetailsContext>? _configure;

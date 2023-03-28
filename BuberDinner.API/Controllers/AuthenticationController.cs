@@ -1,8 +1,7 @@
-﻿using BuberDinner.API.Filter;
-using BuberDinner.API.Errors;
-using BuberDinner.Application.Services.Authentication;
+﻿using BuberDinner.Application.Services.Authentication;
 using BuberDinner.Contracts.Authentication;
 using Microsoft.AspNetCore.Mvc;
+using ErrorOr;
 
 namespace BuberDinner.API.Controllers
 {
@@ -21,14 +20,23 @@ namespace BuberDinner.API.Controllers
         [HttpPost("register")]
         public IActionResult Register(RegisterRequest registerRequest)
         {
-            AuthenticationResult? authResult = _authenticationService.Register
+            ErrorOr<AuthenticationResult> authResult = _authenticationService.Register
                 (
                     registerRequest.FirstName, 
                     registerRequest.LastName, 
                     registerRequest.Email, 
                     registerRequest.Password
                 );
-            AuthenticationResponse? authResponse = new AuthenticationResponse
+            return authResult.MatchFirst(
+                    authResult => Ok(MapAuthResult(authResult)),
+                    firstError => Problem(statusCode: StatusCodes.Status409Conflict, title: firstError.Description)
+                );
+            
+        }
+
+        private static AuthenticationResponse MapAuthResult(AuthenticationResult authResult)
+        {
+            return new AuthenticationResponse
                 (
                     authResult.User.Id,
                     authResult.User.FirstName,
@@ -36,13 +44,12 @@ namespace BuberDinner.API.Controllers
                     authResult.User.Email,
                     authResult.Token
                 );
-            return Ok(authResponse);
         }
 
         [HttpPost("login")]
         public IActionResult Login(LoginRequest loginRequest)
         {
-            AuthenticationResult? authResult = _authenticationService.Login
+            ErrorOr<AuthenticationResult> authResult = _authenticationService.Login
             (
                 loginRequest.Email,
                 loginRequest.Password

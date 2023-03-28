@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "5TcZ4DFOpnK2S5JHW9KDBaOShjF/enOYnc/8a4uer6+11Lk1fRj9JsJdSurqfbzU5vEaaZN3chmNtdgmffI4zw==",
+  "dgSpecHash": "0R99yDc8wG/rsUFBzN+DcyhnZ1fN9hnMTWTZNFGfc93pYirXGAcCX7/lJvxKulEOjmbB+d4V+f6Es+2QqWsKaw==",
   "success": true,
-  "projectFilePath": "D:\\learning_path\\CleanArchitecture-DDD\\BuberDinner.Application\\BuberDinner.Application.csproj",
+  "projectFilePath": "F:\\learning\\CleanArchitecture-DDD\\BuberDinner.Application\\BuberDinner.Application.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
+    "C:\\Users\\huyqn\\.nuget\\packages\\erroror\\1.2.1\\erroror.1.2.1.nupkg.sha512",
+    "C:\\Users\\huyqn\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
   ],
   "logs": []
 }

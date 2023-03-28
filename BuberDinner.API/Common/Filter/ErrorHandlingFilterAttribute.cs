@@ -1,9 +1,8 @@
-﻿
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using System.Net;
 
-namespace BuberDinner.API.Filter
+namespace BuberDinner.API.Common.Filter
 {
     public class ErrorHandlingFilterAttribute : ExceptionFilterAttribute
     {
@@ -22,7 +21,7 @@ namespace BuberDinner.API.Filter
 
             context.Result = new ObjectResult(problemDetail);
 
-            context.ExceptionHandled= true;
+            context.ExceptionHandled = true;
         }
     }
 }
