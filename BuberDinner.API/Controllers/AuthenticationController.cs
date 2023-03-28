@@ -1,8 +1,10 @@
-﻿using BuberDinner.Application.Services.Authentication;
-using BuberDinner.Contracts.Authentication;
+﻿using BuberDinner.Contracts.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using BuberDinner.Domain.Common.Errors;
 using ErrorOr;
+using BuberDinner.Application.Services.Authentication.Commands;
+using BuberDinner.Application.Services.Authentication.Common;
+using BuberDinner.Application.Services.Authentication.Queries;
 
 namespace BuberDinner.API.Controllers
 {
@@ -11,17 +13,20 @@ namespace BuberDinner.API.Controllers
     //[ErrorHandlingFilterAttribute]
     public class AuthenticationController : ApiController
     {
-        private readonly IAuthenticationService _authenticationService;
+        private readonly IAuthenticationCommandService _authenticationCommandService;
 
-        public AuthenticationController(IAuthenticationService authenticationService)
+        private readonly IAuthenticationQueryService _authenticationQueryService;
+
+        public AuthenticationController(IAuthenticationCommandService authenticationService, IAuthenticationQueryService authenticationQueryService)
         {
-            _authenticationService = authenticationService;
+            _authenticationCommandService = authenticationService;
+            _authenticationQueryService = authenticationQueryService;
         }
 
         [HttpPost("register")]
         public IActionResult Register(RegisterRequest registerRequest)
         {
-            ErrorOr<AuthenticationResult> authResult = _authenticationService.Register
+            ErrorOr<AuthenticationResult> authResult = _authenticationCommandService.Register
                 (
                     registerRequest.FirstName, 
                     registerRequest.LastName, 
@@ -50,7 +55,7 @@ namespace BuberDinner.API.Controllers
         [HttpPost("login")]
         public IActionResult Login(LoginRequest loginRequest)
         {
-            ErrorOr<AuthenticationResult> authResult = _authenticationService.Login
+            ErrorOr<AuthenticationResult> authResult = _authenticationQueryService.Login
             (
                 loginRequest.Email,
                 loginRequest.Password
