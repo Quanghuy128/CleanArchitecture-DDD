@@ -5,10 +5,10 @@ using ErrorOr;
 
 namespace BuberDinner.API.Controllers
 {
-    [ApiController]
+    //[ApiController]
     [Route("auth")]
     //[ErrorHandlingFilterAttribute]
-    public class AuthenticationController : ControllerBase
+    public class AuthenticationController : ApiController
     {
         private readonly IAuthenticationService _authenticationService;
 
@@ -27,9 +27,9 @@ namespace BuberDinner.API.Controllers
                     registerRequest.Email, 
                     registerRequest.Password
                 );
-            return authResult.MatchFirst(
+            return authResult.Match(
                     authResult => Ok(MapAuthResult(authResult)),
-                    firstError => Problem(statusCode: StatusCodes.Status409Conflict, title: firstError.Description)
+                    errors => Problem(errors)
                 );
             
         }
@@ -55,15 +55,10 @@ namespace BuberDinner.API.Controllers
                 loginRequest.Password
             );
 
-            AuthenticationResponse? authResponse = new AuthenticationResponse
-                (
-                    authResult.User.Id,
-                    authResult.User.FirstName,
-                    authResult.User.LastName,
-                    authResult.User.Email,
-                    authResult.Token
+            return authResult.Match(
+                    authResult => Ok(MapAuthResult(authResult)),
+                    errors => Problem(errors)
                 );
-            return Ok(authResponse);
         }
     }
 }

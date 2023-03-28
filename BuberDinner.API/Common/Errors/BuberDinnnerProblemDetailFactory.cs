@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
+using ErrorOr;
 
 namespace BuberDinner.API.Common.Errors
 {
@@ -96,7 +97,13 @@ namespace BuberDinner.API.Common.Errors
 
             _configure?.Invoke(new() { HttpContext = httpContext!, ProblemDetails = problemDetails });
 
-            problemDetails.Extensions.Add("customProperty", "customValue");
+            var errors = httpContext?.Items["errors"] as List<Error>;
+
+            if(errors is not null)
+            {
+                problemDetails.Extensions.Add("errorCodes", errors.Select(e => e.Code));
+            }
+
         }
     }
 }
