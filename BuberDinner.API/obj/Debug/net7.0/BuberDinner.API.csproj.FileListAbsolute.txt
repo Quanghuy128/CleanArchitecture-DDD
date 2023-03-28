@@ -137,3 +137,6 @@ F:\learning\CleanArchitecture-DDD\BuberDinner.API\obj\Debug\net7.0\BuberDinner.A
 F:\learning\CleanArchitecture-DDD\BuberDinner.API\obj\Debug\net7.0\BuberDinner.API.genruntimeconfig.cache
 F:\learning\CleanArchitecture-DDD\BuberDinner.API\obj\Debug\net7.0\ref\BuberDinner.API.dll
 F:\learning\CleanArchitecture-DDD\BuberDinner.API\bin\Debug\net7.0\ErrorOr.dll
+F:\learning\CleanArchitecture-DDD\BuberDinner.API\bin\Debug\net7.0\MediatR.dll
+F:\learning\CleanArchitecture-DDD\BuberDinner.API\bin\Debug\net7.0\MediatR.Contracts.dll
+F:\learning\CleanArchitecture-DDD\BuberDinner.API\bin\Debug\net7.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
