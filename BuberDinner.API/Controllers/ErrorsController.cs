@@ -17,7 +17,7 @@ namespace BuberDinner.API.Controllers
                 _ => (StatusCodes.Status500InternalServerError, "An unexpected error occurred.")
             };
 
-            return Problem();
+            return Problem(statusCode: statusCode, title: message);
         }
     }
 }

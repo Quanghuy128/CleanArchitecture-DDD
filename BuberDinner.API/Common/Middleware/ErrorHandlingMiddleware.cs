@@ -2,7 +2,7 @@
 using System.Net;
 using System.Text.Json;
 
-namespace BuberDinner.API.Middleware
+namespace BuberDinner.API.Common.Middleware
 {
     public class ErrorHandlingMiddleware
     {
@@ -19,17 +19,17 @@ namespace BuberDinner.API.Middleware
             {
                 await _next(context);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 await HandleExceptionAsync(context, ex);
             }
         }
-        
+
         private static Task HandleExceptionAsync(HttpContext context, Exception exception)
         {
             var code = HttpStatusCode.InternalServerError; // 500
-            var result = JsonSerializer.Serialize(new {error = "An error occurred while processing your request!!!" });
-            context.Response.ContentType= "application/json";
+            var result = JsonSerializer.Serialize(new { error = "An error occurred while processing your request!!!" });
+            context.Response.ContentType = "application/json";
             context.Response.StatusCode = (int)code;
             return context.Response.WriteAsync(result);
         }
