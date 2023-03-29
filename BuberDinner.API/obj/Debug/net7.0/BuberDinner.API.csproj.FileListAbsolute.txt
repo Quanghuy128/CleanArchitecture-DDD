@@ -146,3 +146,6 @@ F:\learning\CleanArchitecture-DDD\BuberDinner.API\bin\Debug\net7.0\Mapster.Depen
 F:\learning\CleanArchitecture-DDD\BuberDinner.API\bin\Debug\net7.0\FluentValidation.dll
 F:\learning\CleanArchitecture-DDD\BuberDinner.API\bin\Debug\net7.0\FluentValidation.AspNetCore.dll
 F:\learning\CleanArchitecture-DDD\BuberDinner.API\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll
+F:\learning\CleanArchitecture-DDD\BuberDinner.API\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+F:\learning\CleanArchitecture-DDD\BuberDinner.API\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+F:\learning\CleanArchitecture-DDD\BuberDinner.API\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll

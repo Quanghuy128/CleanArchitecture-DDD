@@ -7,12 +7,14 @@ using MediatR;
 using BuberDinner.Application.Authentication.Commands.Register;
 using BuberDinner.Application.Authentication.Queries;
 using MapsterMapper;
+using Microsoft.AspNetCore.Authorization;
 
 namespace BuberDinner.API.Controllers
 {
     //[ApiController]
     [Route("auth")]
     //[ErrorHandlingFilterAttribute]
+    [AllowAnonymous]
     public class AuthenticationController : ApiController
     {
         private readonly ISender _mediator;

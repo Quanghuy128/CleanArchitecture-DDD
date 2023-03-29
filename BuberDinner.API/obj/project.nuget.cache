@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "buepukLCWNHT1WxjMDX+MXENEPJ1fmm13ZGFAnsHeSs/7MVa1mBXQ4/4EVIKX24m5aR7vdOdswyOmqIP0XsDcA==",
+  "dgSpecHash": "fDakWxgHiAUN4Y+WGtmYseav0+yxL+XUggUrYgUhnAEacnWNI1i5M06ISJL0MTjsRVdGGZz1PvD86MAuShPQpw==",
   "success": true,
   "projectFilePath": "F:\\learning\\CleanArchitecture-DDD\\BuberDinner.API\\BuberDinner.API.csproj",
   "expectedPackageFiles": [
@@ -14,6 +14,7 @@
     "C:\\Users\\huyqn\\.nuget\\packages\\mediatr\\12.0.1\\mediatr.12.0.1.nupkg.sha512",
     "C:\\Users\\huyqn\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\huyqn\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
+    "C:\\Users\\huyqn\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\7.0.4\\microsoft.aspnetcore.authentication.jwtbearer.7.0.4.nupkg.sha512",
     "C:\\Users\\huyqn\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.4\\microsoft.aspnetcore.openapi.7.0.4.nupkg.sha512",
     "C:\\Users\\huyqn\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\huyqn\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
@@ -27,6 +28,8 @@
     "C:\\Users\\huyqn\\.nuget\\packages\\microsoft.identitymodel.abstractions\\6.27.0\\microsoft.identitymodel.abstractions.6.27.0.nupkg.sha512",
     "C:\\Users\\huyqn\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.27.0\\microsoft.identitymodel.jsonwebtokens.6.27.0.nupkg.sha512",
     "C:\\Users\\huyqn\\.nuget\\packages\\microsoft.identitymodel.logging\\6.27.0\\microsoft.identitymodel.logging.6.27.0.nupkg.sha512",
+    "C:\\Users\\huyqn\\.nuget\\packages\\microsoft.identitymodel.protocols\\6.15.1\\microsoft.identitymodel.protocols.6.15.1.nupkg.sha512",
+    "C:\\Users\\huyqn\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.15.1\\microsoft.identitymodel.protocols.openidconnect.6.15.1.nupkg.sha512",
     "C:\\Users\\huyqn\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.27.0\\microsoft.identitymodel.tokens.6.27.0.nupkg.sha512",
     "C:\\Users\\huyqn\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\huyqn\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",

@@ -11,7 +11,8 @@
           "BuberDinner.Application": "1.0.0",
           "Microsoft.Extensions.Configuration": "7.0.0",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "7.0.0",
-          "System.IdentityModel.Tokens.Jwt": "6.27.0"
+          "System.IdentityModel.Tokens.Jwt": "6.27.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.4"
         },
         "runtime": {
           "BuberDinner.Infrastucture.dll": {}
@@ -89,6 +90,17 @@
           }
         }
       },
+      "Microsoft.AspNetCore.Authentication.JwtBearer/7.0.4": {
+        "dependencies": {
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "6.15.1"
+        },
+        "runtime": {
+          "lib/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {
+            "assemblyVersion": "7.0.4.0",
+            "fileVersion": "7.0.423.11903"
+          }
+        }
+      },
       "Microsoft.CSharp/4.5.0": {},
       "Microsoft.Extensions.Configuration/7.0.0": {
         "dependencies": {
@@ -153,6 +165,30 @@
           "lib/net6.0/Microsoft.IdentityModel.Logging.dll": {
             "assemblyVersion": "6.27.0.0",
             "fileVersion": "6.27.0.40215"
+          }
+        }
+      },
+      "Microsoft.IdentityModel.Protocols/6.15.1": {
+        "dependencies": {
+          "Microsoft.IdentityModel.Logging": "6.27.0",
+          "Microsoft.IdentityModel.Tokens": "6.27.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.dll": {
+            "assemblyVersion": "6.15.1.0",
+            "fileVersion": "6.15.1.30119"
+          }
+        }
+      },
+      "Microsoft.IdentityModel.Protocols.OpenIdConnect/6.15.1": {
+        "dependencies": {
+          "Microsoft.IdentityModel.Protocols": "6.15.1",
+          "System.IdentityModel.Tokens.Jwt": "6.27.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll": {
+            "assemblyVersion": "6.15.1.0",
+            "fileVersion": "6.15.1.30119"
           }
         }
       },
@@ -277,6 +313,13 @@
       "path": "mediatr.extensions.microsoft.dependencyinjection/11.1.0",
       "hashPath": "mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512"
     },
+    "Microsoft.AspNetCore.Authentication.JwtBearer/7.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-yMCO9yU1kNQ5MomCnGDNsjPyIvnxHu4U7AfRkLmzZuzCeOGGA5XiehmpfzzqlyIs8wbSR/c6jbuLexedfKgjgA==",
+      "path": "microsoft.aspnetcore.authentication.jwtbearer/7.0.4",
+      "hashPath": "microsoft.aspnetcore.authentication.jwtbearer.7.0.4.nupkg.sha512"
+    },
     "Microsoft.CSharp/4.5.0": {
       "type": "package",
       "serviceable": true,
@@ -353,6 +396,20 @@
       "sha512": "sha512-4IzWb/CjtSYzq4FRcxRZSkkhhosj6DuDltBjj7BIq8f83O0J0lS8Wv50puiGyzAJH3WMjpZXz0TVOTjBi+BhQA==",
       "path": "microsoft.identitymodel.logging/6.27.0",
       "hashPath": "microsoft.identitymodel.logging.6.27.0.nupkg.sha512"
+    },
+    "Microsoft.IdentityModel.Protocols/6.15.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6nHr+4yE8vj620Vy4L0pl7kmkvWc06wBrJ+AOo/gjqzu/UD/MYgySUqRGlZYrvvNmKkUWMw4hdn78MPCb4bstA==",
+      "path": "microsoft.identitymodel.protocols/6.15.1",
+      "hashPath": "microsoft.identitymodel.protocols.6.15.1.nupkg.sha512"
+    },
+    "Microsoft.IdentityModel.Protocols.OpenIdConnect/6.15.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WwecgT/PNrytLNUWjkYtnnG2LXMAzkINSaZM+8dPPiEpOGz1bQDBWAenTSurYICxGoA1sOPriFXk+ocnQyprKw==",
+      "path": "microsoft.identitymodel.protocols.openidconnect/6.15.1",
+      "hashPath": "microsoft.identitymodel.protocols.openidconnect.6.15.1.nupkg.sha512"
     },
     "Microsoft.IdentityModel.Tokens/6.27.0": {
       "type": "package",
