@@ -338,6 +338,10 @@
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
               "version": "[6.27.0, )"
+            },
+            "microsoft.aspnetcore.authentication.jwtbearer": {
+              "target": "Package",
+              "version": "[7.0.4, )"
             }
           },
           "imports": [
