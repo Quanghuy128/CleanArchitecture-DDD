@@ -19,11 +19,11 @@ namespace BuberDinner.Application.Common.Behaviors
         }
 
         public async Task<TResponse> Handle(
-            TRequest request, 
-            RequestHandlerDelegate<TResponse> next, 
+            TRequest request,
+            RequestHandlerDelegate<TResponse> next,
             CancellationToken cancellationToken)
         {
-            if(_validator is null)
+            if (_validator is null)
             {
                 return await next();
             }
@@ -36,11 +36,11 @@ namespace BuberDinner.Application.Common.Behaviors
             var errors = validationResult.Errors
                 .Select(validationFailure => Error.Validation
                 (
-                    validationFailure.PropertyName, 
+                    validationFailure.PropertyName,
                     validationFailure.ErrorMessage)
                 )
                 .ToArray();
-            return (dynamic) errors;
+            return (dynamic)errors;
         }
     }
 }
