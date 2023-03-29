@@ -22,3 +22,15 @@ D:\learning_path\CleanArchitecture-DDD\BuberDinner.Contracts\obj\Debug\net7.0\Bu
 D:\learning_path\CleanArchitecture-DDD\BuberDinner.Contracts\obj\Debug\net7.0\refint\BuberDinner.Contracts.dll
 D:\learning_path\CleanArchitecture-DDD\BuberDinner.Contracts\obj\Debug\net7.0\BuberDinner.Contracts.pdb
 D:\learning_path\CleanArchitecture-DDD\BuberDinner.Contracts\obj\Debug\net7.0\ref\BuberDinner.Contracts.dll
+F:\learning\CleanArchitecture-DDD\BuberDinner.Contracts\bin\Debug\net7.0\BuberDinner.Contracts.deps.json
+F:\learning\CleanArchitecture-DDD\BuberDinner.Contracts\bin\Debug\net7.0\BuberDinner.Contracts.dll
+F:\learning\CleanArchitecture-DDD\BuberDinner.Contracts\bin\Debug\net7.0\BuberDinner.Contracts.pdb
+F:\learning\CleanArchitecture-DDD\BuberDinner.Contracts\obj\Debug\net7.0\BuberDinner.Contracts.csproj.AssemblyReference.cache
+F:\learning\CleanArchitecture-DDD\BuberDinner.Contracts\obj\Debug\net7.0\BuberDinner.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+F:\learning\CleanArchitecture-DDD\BuberDinner.Contracts\obj\Debug\net7.0\BuberDinner.Contracts.AssemblyInfoInputs.cache
+F:\learning\CleanArchitecture-DDD\BuberDinner.Contracts\obj\Debug\net7.0\BuberDinner.Contracts.AssemblyInfo.cs
+F:\learning\CleanArchitecture-DDD\BuberDinner.Contracts\obj\Debug\net7.0\BuberDinner.Contracts.csproj.CoreCompileInputs.cache
+F:\learning\CleanArchitecture-DDD\BuberDinner.Contracts\obj\Debug\net7.0\BuberDinner.Contracts.dll
+F:\learning\CleanArchitecture-DDD\BuberDinner.Contracts\obj\Debug\net7.0\refint\BuberDinner.Contracts.dll
+F:\learning\CleanArchitecture-DDD\BuberDinner.Contracts\obj\Debug\net7.0\BuberDinner.Contracts.pdb
+F:\learning\CleanArchitecture-DDD\BuberDinner.Contracts\obj\Debug\net7.0\ref\BuberDinner.Contracts.dll

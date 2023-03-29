@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\learning_path\\CleanArchitecture-DDD\\BuberDinner.Application\\BuberDinner.Application.csproj": {}
+    "F:\\learning\\CleanArchitecture-DDD\\BuberDinner.Application\\BuberDinner.Application.csproj": {}
   },
   "projects": {
-    "D:\\learning_path\\CleanArchitecture-DDD\\BuberDinner.Application\\BuberDinner.Application.csproj": {
+    "F:\\learning\\CleanArchitecture-DDD\\BuberDinner.Application\\BuberDinner.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\learning_path\\CleanArchitecture-DDD\\BuberDinner.Application\\BuberDinner.Application.csproj",
+        "projectUniqueName": "F:\\learning\\CleanArchitecture-DDD\\BuberDinner.Application\\BuberDinner.Application.csproj",
         "projectName": "BuberDinner.Application",
-        "projectPath": "D:\\learning_path\\CleanArchitecture-DDD\\BuberDinner.Application\\BuberDinner.Application.csproj",
-        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "D:\\learning_path\\CleanArchitecture-DDD\\BuberDinner.Application\\obj\\",
+        "projectPath": "F:\\learning\\CleanArchitecture-DDD\\BuberDinner.Application\\BuberDinner.Application.csproj",
+        "packagesPath": "C:\\Users\\huyqn\\.nuget\\packages\\",
+        "outputPath": "F:\\learning\\CleanArchitecture-DDD\\BuberDinner.Application\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\huyqn\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,15 +22,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\learning_path\\CleanArchitecture-DDD\\BuberDinner.Domain\\BuberDinner.Domain.csproj": {
-                "projectPath": "D:\\learning_path\\CleanArchitecture-DDD\\BuberDinner.Domain\\BuberDinner.Domain.csproj"
+              "F:\\learning\\CleanArchitecture-DDD\\BuberDinner.Domain\\BuberDinner.Domain.csproj": {
+                "projectPath": "F:\\learning\\CleanArchitecture-DDD\\BuberDinner.Domain\\BuberDinner.Domain.csproj"
               }
             }
           }
@@ -49,6 +44,22 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.5.1, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.2.2, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
             "Microsoft.Extensions.DependencyInjection.Abstractions": {
               "target": "Package",
               "version": "[7.0.0, )"
@@ -70,25 +81,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\learning_path\\CleanArchitecture-DDD\\BuberDinner.Domain\\BuberDinner.Domain.csproj": {
+    "F:\\learning\\CleanArchitecture-DDD\\BuberDinner.Domain\\BuberDinner.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\learning_path\\CleanArchitecture-DDD\\BuberDinner.Domain\\BuberDinner.Domain.csproj",
+        "projectUniqueName": "F:\\learning\\CleanArchitecture-DDD\\BuberDinner.Domain\\BuberDinner.Domain.csproj",
         "projectName": "BuberDinner.Domain",
-        "projectPath": "D:\\learning_path\\CleanArchitecture-DDD\\BuberDinner.Domain\\BuberDinner.Domain.csproj",
-        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "D:\\learning_path\\CleanArchitecture-DDD\\BuberDinner.Domain\\obj\\",
+        "projectPath": "F:\\learning\\CleanArchitecture-DDD\\BuberDinner.Domain\\BuberDinner.Domain.csproj",
+        "packagesPath": "C:\\Users\\huyqn\\.nuget\\packages\\",
+        "outputPath": "F:\\learning\\CleanArchitecture-DDD\\BuberDinner.Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\huyqn\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -96,7 +103,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -114,6 +120,12 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "erroror": {
+              "target": "Package",
+              "version": "[1.2.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -130,7 +142,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

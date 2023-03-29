@@ -1,19 +1,13 @@
-using BuberDinner.API.Errors;
-using BuberDinner.API.Filter;
-using BuberDinner.API.Middleware;
 using BuberDinner.Application;
 using BuberDinner.Infrastucture;
-using Microsoft.AspNetCore.Diagnostics;
-using Microsoft.AspNetCore.Mvc.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the ioc container.
-builder.Services.AddApplication().AddInfrastucture(builder.Configuration);
+builder.Services.AddPresentation().AddApplication().AddInfrastucture(builder.Configuration);
 
 //builder.Services.AddControllers(options => options.Filters.Add<ErrorHandlingFilterAttribute>());
-builder.Services.AddControllers();
-builder.Services.AddSingleton<ProblemDetailsFactory, BuberDinnnerProblemDetailFactory>();
+
 
 //Swagger
 builder.Services.AddEndpointsApiExplorer();
@@ -39,7 +33,7 @@ app.UseExceptionHandler("/error");
 //});
 
 app.UseHttpsRedirection();
-
+app.UseAuthentication();
+app.UseAuthorization();
 app.MapControllers();
-
 app.Run();
