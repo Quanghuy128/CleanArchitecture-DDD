@@ -4,7 +4,7 @@ using Microsoft.Extensions.Options;
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 using ErrorOr;
-using BuberDinner.API.Http;
+using BuberDinner.API.Common.Http;
 
 namespace BuberDinner.API.Common.Errors
 {

@@ -140,3 +140,6 @@ F:\learning\CleanArchitecture-DDD\BuberDinner.API\bin\Debug\net7.0\ErrorOr.dll
 F:\learning\CleanArchitecture-DDD\BuberDinner.API\bin\Debug\net7.0\MediatR.dll
 F:\learning\CleanArchitecture-DDD\BuberDinner.API\bin\Debug\net7.0\MediatR.Contracts.dll
 F:\learning\CleanArchitecture-DDD\BuberDinner.API\bin\Debug\net7.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+F:\learning\CleanArchitecture-DDD\BuberDinner.API\bin\Debug\net7.0\Mapster.dll
+F:\learning\CleanArchitecture-DDD\BuberDinner.API\bin\Debug\net7.0\Mapster.Core.dll
+F:\learning\CleanArchitecture-DDD\BuberDinner.API\bin\Debug\net7.0\Mapster.DependencyInjection.dll
