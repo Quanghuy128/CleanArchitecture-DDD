@@ -149,3 +149,16 @@ F:\learning\CleanArchitecture-DDD\BuberDinner.API\bin\Debug\net7.0\FluentValidat
 F:\learning\CleanArchitecture-DDD\BuberDinner.API\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 F:\learning\CleanArchitecture-DDD\BuberDinner.API\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
 F:\learning\CleanArchitecture-DDD\BuberDinner.API\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\learning_path\CleanArchitecture-DDD\BuberDinner.API\bin\Debug\net7.0\ErrorOr.dll
+D:\learning_path\CleanArchitecture-DDD\BuberDinner.API\bin\Debug\net7.0\FluentValidation.dll
+D:\learning_path\CleanArchitecture-DDD\BuberDinner.API\bin\Debug\net7.0\FluentValidation.AspNetCore.dll
+D:\learning_path\CleanArchitecture-DDD\BuberDinner.API\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll
+D:\learning_path\CleanArchitecture-DDD\BuberDinner.API\bin\Debug\net7.0\Mapster.dll
+D:\learning_path\CleanArchitecture-DDD\BuberDinner.API\bin\Debug\net7.0\Mapster.Core.dll
+D:\learning_path\CleanArchitecture-DDD\BuberDinner.API\bin\Debug\net7.0\Mapster.DependencyInjection.dll
+D:\learning_path\CleanArchitecture-DDD\BuberDinner.API\bin\Debug\net7.0\MediatR.dll
+D:\learning_path\CleanArchitecture-DDD\BuberDinner.API\bin\Debug\net7.0\MediatR.Contracts.dll
+D:\learning_path\CleanArchitecture-DDD\BuberDinner.API\bin\Debug\net7.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+D:\learning_path\CleanArchitecture-DDD\BuberDinner.API\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\learning_path\CleanArchitecture-DDD\BuberDinner.API\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+D:\learning_path\CleanArchitecture-DDD\BuberDinner.API\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll

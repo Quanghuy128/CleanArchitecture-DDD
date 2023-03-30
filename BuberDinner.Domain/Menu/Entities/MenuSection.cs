@@ -11,18 +11,20 @@ namespace BuberDinner.Domain.Menu.Entities
 
         public IReadOnlyList<MenuItem> Items => _items.AsReadOnly();
 
-        private MenuSection(MenuSectionId menuSectionId, string name, string description)
+        private MenuSection(MenuSectionId menuSectionId, string name, string description, List<MenuItem> items)
             :base(menuSectionId)
         {
             Name = name;
             Description = description;
+            _items = items;
         }
-        public static MenuSection Create(string name, string description)
+        public static MenuSection Create(string name, string description, List<MenuItem> items)
         {
             return new(
                 MenuSectionId.CreateUnique(),
                 name,
-                description
+                description,
+                items
             );
         }
     }
