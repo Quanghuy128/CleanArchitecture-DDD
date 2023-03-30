@@ -1,17 +1,18 @@
-﻿using BuberDinner.Domain.Common.Models;
-using BuberDinner.Domain.UserAggrerate.ValueObjects;
+﻿using BuberDinner.Domain.UserAggrerate.ValueObjects;
 
 namespace BuberDinner.Domain.UserAggrerate.Entities
 {
-    public class User : Entity<UserId>
+    public class User 
     {
+        public Guid Id { get; set; }
         public string FirstName { get; set; } = null;
         public string LastName { get; set; } = null;
         public string Email { get; set; } = null;
         public string Password { get; set; } = null;
 
-        public User(UserId userId, string firstName, string lastName, string email, string password) : base(userId)
+        public User(Guid id, string firstName, string lastName, string email, string password)
         {
+            Id = id;
             FirstName = firstName;
             LastName = lastName;
             Email = email;
@@ -20,7 +21,7 @@ namespace BuberDinner.Domain.UserAggrerate.Entities
 
         public static User Create(string firstName, string lastName, string email, string password)
         {
-            return new(UserId.CreateUnique(), firstName, lastName, email, password);
+            return new(UserId.CreateUnique().Value, firstName, lastName, email, password);
         }
     }
 }
