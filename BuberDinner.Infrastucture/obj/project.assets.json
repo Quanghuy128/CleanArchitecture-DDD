@@ -1363,19 +1363,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\huyqn\\.nuget\\packages\\": {}
+    "C:\\Users\\ADMIN\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\learning\\CleanArchitecture-DDD\\BuberDinner.Infrastucture\\BuberDinner.Infrastucture.csproj",
+      "projectUniqueName": "D:\\learning_path\\CleanArchitecture-DDD\\BuberDinner.Infrastucture\\BuberDinner.Infrastucture.csproj",
       "projectName": "BuberDinner.Infrastucture",
-      "projectPath": "F:\\learning\\CleanArchitecture-DDD\\BuberDinner.Infrastucture\\BuberDinner.Infrastucture.csproj",
-      "packagesPath": "C:\\Users\\huyqn\\.nuget\\packages\\",
-      "outputPath": "F:\\learning\\CleanArchitecture-DDD\\BuberDinner.Infrastucture\\obj\\",
+      "projectPath": "D:\\learning_path\\CleanArchitecture-DDD\\BuberDinner.Infrastucture\\BuberDinner.Infrastucture.csproj",
+      "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+      "outputPath": "D:\\learning_path\\CleanArchitecture-DDD\\BuberDinner.Infrastucture\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\huyqn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1383,14 +1388,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "F:\\learning\\CleanArchitecture-DDD\\BuberDinner.Application\\BuberDinner.Application.csproj": {
-              "projectPath": "F:\\learning\\CleanArchitecture-DDD\\BuberDinner.Application\\BuberDinner.Application.csproj"
+            "D:\\learning_path\\CleanArchitecture-DDD\\BuberDinner.Application\\BuberDinner.Application.csproj": {
+              "projectPath": "D:\\learning_path\\CleanArchitecture-DDD\\BuberDinner.Application\\BuberDinner.Application.csproj"
             }
           }
         }
@@ -1438,7 +1444,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   },
