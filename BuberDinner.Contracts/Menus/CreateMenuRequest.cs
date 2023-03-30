@@ -12,11 +12,13 @@
         DateTime UpdateDateTime
     );
     public record MenuSection(
+        Guid Id,
         string Name,
         string Description,
         List<MenuItem> Items
     );
     public record MenuItem(
+        Guid Id,
         string Name,
         string Description
     );

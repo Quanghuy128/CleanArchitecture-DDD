@@ -5,7 +5,10 @@
         Guid Id,
         string Name,
         string Description,
-        float? AverageRating, 
+        float? AverageRating,
+        string HostId,
+        List<string> DinnerIds,
+        List<string> MenuReviewIds,
         List<MenuSectionResponse> Sections
     );
     public record MenuSectionResponse(

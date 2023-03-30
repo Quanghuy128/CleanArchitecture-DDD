@@ -14,10 +14,6 @@ namespace BuberDinner.Domain.Menu
         private readonly List<DinnerId> _dinnerIds = new();
         private readonly List<MenuReviewId> _menuReviewIds = new();
 
-        public Menu(MenuId id) : base(id)
-        {
-        }
-
         public string Name { get; set; }
         public string Description { get; set; }
         public AverageRating AverageRating { get; set; }
@@ -31,5 +27,44 @@ namespace BuberDinner.Domain.Menu
 
         public DateTime UpdateDateTime { get; set; }
 
+        private Menu(
+            MenuId menuId,
+            string name,
+            string description,
+            AverageRating averageRating,
+            HostId hostId,
+            List<MenuSection> sections,
+            DateTime createDateTime,
+            DateTime updateDateTime
+        ) : base(menuId)
+        {
+            Name = name;
+            Description = description;
+            AverageRating = averageRating;
+            HostId = hostId;
+            _sections = sections;
+            CreateDateTime = createDateTime;
+            UpdateDateTime = updateDateTime;
+        }
+
+        public static Menu Create
+        (
+            HostId hostId,
+            string name,
+            string description,
+            List<MenuSection>? sections
+        )
+        {
+            return new(
+                MenuId.CreateUnique(),
+                name,
+                description,
+                AverageRating.CreateNew(),
+                hostId,
+                sections,
+                DateTime.UtcNow,
+                DateTime.UtcNow
+            ); ;
+        }
     }
 }
